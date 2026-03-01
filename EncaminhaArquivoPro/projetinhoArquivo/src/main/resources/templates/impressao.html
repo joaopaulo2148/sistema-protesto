@@ -1,0 +1,17 @@
+<html>
+<body>
+    <iframe id="pdfFrame" style="display:none;"></iframe>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const pdfUrl = urlParams.get("file");
+
+        const frame = document.getElementById("pdfFrame");
+        frame.src = pdfUrl;
+
+        frame.onload = function() {
+            frame.contentWindow.print();
+        };
+    </script>
+</body>
+</html>
