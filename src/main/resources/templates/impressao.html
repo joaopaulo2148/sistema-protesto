@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Imprimindo...</title>
+</head>
+
+<body style="margin:0;">
+
+<iframe id="pdfFrame"
+        style="width:100%; height:100vh; border:none;">
+</iframe>
+
+<script th:inline="javascript">
+
+    const base64 = /*[[${pdfBase64}]]*/ "";
+
+    const iframe = document.getElementById("pdfFrame");
+
+    iframe.src = "data:application/pdf;base64," + base64;
+
+    iframe.onload = function() {
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+    };
+
+</script>
+
+</body>
+</html> -->
